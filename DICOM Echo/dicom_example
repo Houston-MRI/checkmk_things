@@ -1,1 +1,1 @@
-python /opt/monScripts/dicom.py AE_TITLE HOSTNAME PORT
+python /opt/scripts/dicom.py AE_TITLE HOSTNAME PORT
