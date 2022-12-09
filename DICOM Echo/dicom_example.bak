@@ -1,0 +1,1 @@
+python /opt/monScripts/dicom.py HOUSTONMRI VS-D1-PACS01 104
