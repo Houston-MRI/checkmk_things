@@ -3,6 +3,7 @@ Some scripts that we have made to make CheckMK more useful to our organization.
 
 ## DICOM Echo
 This script enables a monitored host (perhaps the CheckMK server itself) to perform DICOM echo tests to endpoints. It depends on Python, the DCM4CHE Toolkit 2.0.15 (and by extension, Java). This script can be added multiple times to support querying multiple DICOM hosts. Once up and running, CheckMK will gather the DICOM status (Critical/OK) as well as the response time.
+
 ![image](https://user-images.githubusercontent.com/98006216/206751755-f4840f60-0105-4712-84cf-6a4d488fc23d.png)
 
 #### To Configure:
