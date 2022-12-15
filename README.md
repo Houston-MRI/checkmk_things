@@ -12,3 +12,10 @@ This script enables a monitored host (perhaps the CheckMK server itself) to perf
 - Rename the dicom_example script to a name that is meaningful to you (ex dicom_pacs) then open it in an editor. Modify the path to the python script to reflect where you placed it in step 2. Fill in the placeholders with your AE Title, Hostname, and DICOM port.
 - Duplicate this script as many times as you need, just make sure each one has a unique name.
 - Run a service discovery on the host in CheckMK. If needed, you can troubleshoot the plugin by running **check_mk_agent** at the command line. Assuming your agent has no other custom plugins, the very last few lines should contain the DICOM information being sent to the CheckMK server.
+---
+## RDS Licenses
+This is a fixed version of the rds_licenses.vbs plugin that ships with the windows agent by default. The stock plugin includes built-in/temporary CALs. This script has a modified WQL query to exclude Keypack IDs 4 and 2 (these may or may not be the ones that you need to exclude - check in RD Licensing Manager and adjust the query in the script accordingly).
+
+### What changed:
+- Line 56:
+  - Select * from Win32_TSLicenseKeyPack to Select * from Win32_TSLicenseKeyPack where KeyPackId !=4 and KeyPackId !=2
