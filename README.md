@@ -13,7 +13,7 @@ This script enables a monitored host (perhaps the CheckMK server itself) to perf
 - Duplicate this script as many times as you need, just make sure each one has a unique name.
 - Run a service discovery on the host in CheckMK. If needed, you can troubleshoot the plugin by running **check_mk_agent** at the command line. Assuming your agent has no other custom plugins, the very last few lines should contain the DICOM information being sent to the CheckMK server.
 ---
-## RDS Licenses
+## RDS Licenses [(Source)](https://github.com/tribe29/checkmk/blob/master/agents/windows/plugins/rds_licenses.vbs)
 This is a fixed version of the rds_licenses.vbs plugin that ships with the windows agent by default. The stock plugin includes built-in/temporary CALs. This script has a modified WQL query to exclude Keypack IDs 4 and 2 (these may or may not be the ones that you need to exclude - check in RD Licensing Manager and adjust the query in the script accordingly).
 
 ### What changed:
