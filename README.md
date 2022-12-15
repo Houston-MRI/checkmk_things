@@ -18,4 +18,4 @@ This is a fixed version of the rds_licenses.vbs plugin that ships with the windo
 
 ### What changed:
 - Line 56:
-  - Select * from Win32_TSLicenseKeyPack to Select * from Win32_TSLicenseKeyPack where KeyPackId !=4 and KeyPackId !=2
+  - **Select * from Win32_TSLicenseKeyPack** to **Select * from Win32_TSLicenseKeyPack where KeyPackId !=4 and KeyPackId !=2**
